@@ -8,6 +8,7 @@ Step by Step Instruction
 2) Need Twitter Credentials in order to call Twitter API.
 
 3) Modify the file tweets.py in folder exercise_2/tweetwordcount/src/spout and add the user's twitter credentials
+
       ################################################################################
         # Twitter credentials
       ################################################################################
@@ -21,12 +22,20 @@ Step by Step Instruction
 4) Before running the application, create a new data base in postgres call "tcount"
 
 5) Add a table in "tcount" database, call "tweetwordcount" withe following properties.
+
 tcount=# \d tweetwordcount
+
 Table "public.tweetwordcount"
+
  Column |  Type   | Modifiers 
 --------+---------+-----------
+
  word   | text    | not null
+ 
  count  | integer | not null
+ 
+ 
 Indexes:
+
     "tweetwordcount_pkey" PRIMARY KEY, btree (word)
     
